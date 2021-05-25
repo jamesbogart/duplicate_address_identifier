@@ -89,7 +89,7 @@ for f in fps:
         col4 = len(temp_qcd[temp_qcd.ACTION  == 'D'])
         #col 5 is LUCA deletes that are still in BLQ in this type
         col5 = len(temp_qcd[(temp_qcd.ACTION == 'D') & (temp_qcd['IN BLQ?'] == 'Y')])
-        #col 6 is stupid and pointless (not duplicates, but no one seems to actually input this data in the QC sheet when there are thousands of addresses to check and little time to check the address detaisl)
+        #col 6 is for not duplicates (not duplicates, but no one seems to actually input this data in the QC sheet when there are thousands of addresses to check and little time to check the address detaisl)
         col6 = 0
         #col 7 is QC'd Addresses in BLQ
         col7 = len(temp_luca[temp_luca['IN BLQ?'].str.upper() == 'Y'])
